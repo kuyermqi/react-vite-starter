@@ -2,9 +2,11 @@
 
 /** @type {import('prettier').Config} */
 const config = {
-  semi: false,
+  jsxSingleQuote: true,
+  printWidth: 120,
   singleQuote: true,
+  semi: true,
   trailingComma: 'all',
-}
+};
 
-export default config
+export default config;

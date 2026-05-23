@@ -1,20 +1,20 @@
-import type { QueryClient } from '@tanstack/react-query'
-import { Outlet, createRootRouteWithContext } from '@tanstack/react-router'
-import { TanStackRouterDevtoolsPanel } from '@tanstack/react-router-devtools'
-import { TanStackDevtools } from '@tanstack/react-devtools'
+import type { QueryClient } from '@tanstack/react-query';
+import { Outlet, createRootRouteWithContext } from '@tanstack/react-router';
+import { TanStackRouterDevtoolsPanel } from '@tanstack/react-router-devtools';
+import { TanStackDevtools } from '@tanstack/react-devtools';
 
 interface RouterContext {
-  queryClient: QueryClient
+  queryClient: QueryClient;
 }
 
 export const Route = createRootRouteWithContext<RouterContext>()({
   component: RootRoute,
-})
+});
 
 function RootRoute() {
   return (
     <>
-      <div className="font-sans antialiased wrap-anywhere">
+      <div className='font-sans antialiased wrap-anywhere'>
         <Outlet />
       </div>
       <TanStackDevtools
@@ -29,5 +29,5 @@ function RootRoute() {
         ]}
       />
     </>
-  )
+  );
 }
