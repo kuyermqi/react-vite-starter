@@ -8,7 +8,7 @@ const config = defineConfig({
   resolve: {
     tsconfigPaths: true,
   },
-  plugins: [devtools(), tailwindcss(), tanstackRouter(), viteReact()],
+  plugins: [devtools(), tailwindcss(), tanstackRouter({ semicolons: true }), viteReact()],
 });
 
 export default config;
