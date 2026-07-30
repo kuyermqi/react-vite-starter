@@ -13,39 +13,48 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@tailwindcss/vite": "^4.3.0",
-    "@tanstack/react-devtools": "^0.10.5",
-    "@tanstack/react-query": "^5.100.13",
-    "@tanstack/react-router": "^1.170.7",
+    "@tailwindcss/vite": "^4.3.3",
+    "@tanstack/react-devtools": "^0.10.9",
+    "@tanstack/react-query": "^5.101.4",
+    "@tanstack/react-router": "^1.170.18",
     "@tanstack/react-router-devtools": "^1.167.0",
-    "@tanstack/router-plugin": "^1.168.10",
-    "lucide-react": "^1.16.0",
-    "react": "^19.2.6",
-    "react-dom": "^19.2.6",
-    "tailwindcss": "^4.3.0",
-    "zustand": "^5.0.13"
+    "@tanstack/router-plugin": "^1.168.23",
+    "lucide-react": "^1.28.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "tailwindcss": "^4.3.3",
+    "zustand": "^5.0.14"
   },
   "devDependencies": {
-    "@tailwindcss/typography": "^0.5.19",
-    "@tanstack/devtools-vite": "^0.7.0",
+    "@tailwindcss/typography": "^0.5.20",
+    "@tanstack/devtools-vite": "^0.8.3",
     "@tanstack/eslint-config": "^0.4.0",
     "@testing-library/dom": "^10.4.1",
     "@testing-library/react": "^16.3.2",
-    "@types/node": "^24.1.0",
-    "@types/react": "^19.2.15",
+    "@types/node": "^24.13.3",
+    "@types/react": "^19.2.17",
     "@types/react-dom": "^19.2.3",
-    "@vitejs/plugin-react": "^6.0.2",
-    "eslint": "^10.4.0",
-    "jsdom": "^29.1.1",
-    "prettier": "^3.8.3",
-    "typescript": "^5.9.2",
-    "vite": "^8.0.14",
-    "vitest": "^4.1.1"
+    "@vitejs/plugin-react": "^6.0.5",
+    "eslint": "^10.8.0",
+    "jsdom": "^30.0.1",
+    "prettier": "^3.9.6",
+    "typescript": "^5.9.3",
+    "vite": "^8.2.0",
+    "vitest": "^4.1.10"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
       "unrs-resolver",
-      "lightningcss"
-    ]
+      "lightningcss",
+      "esbuild"
+    ],
+    "overrides": {
+      "@babel/core": "^7.29.6",
+      "brace-expansion": "^5.0.8",
+      "esbuild": "^0.28.1",
+      "postcss": "^8.5.18",
+      "shell-quote": "^1.9.0",
+      "launch-editor": "^2.14.1"
+    }
   }
 }
